@@ -1,13 +1,22 @@
-﻿namespace Dikdörtgen_Class
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace For_Tek_Çift_Ayırma
 {
-    internal class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// Uygulamanın ana girdi noktası.
+        /// </summary>
+        [STAThread]
+        static void Main()
         {
-            dıkdortgen d = new dıkdortgen(3,4);
-            Console.WriteLine("dikdörtgenin alanı :" + d.alanhesapla());
-            Console.WriteLine("dikdörtgenin çevresi :" + d.cevrehesapla());
-            Console.ReadLine();
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
         }
     }
 }
