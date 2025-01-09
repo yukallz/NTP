@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace For_Tek_Çift_Ayırma
+namespace Sayaçlar
 {
     internal static class Program
     {
